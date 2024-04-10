@@ -6,7 +6,10 @@
 }
 
 .level {
-  text-align: center;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
   color: #fff;
   margin-left: 7rem;
 }

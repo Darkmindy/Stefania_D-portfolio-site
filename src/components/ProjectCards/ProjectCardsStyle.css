@@ -21,6 +21,13 @@
   width: 100%;
 }
 
+.project-card .tech-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;  /* Aggiungi un margine a destra */
+}
+
+
 .project-title {
   color: #fff;
   padding: 1rem 0;

@@ -18,6 +18,10 @@
         "multiline-ternary": "off",
         "space-before-function-paren": "off",
         "@typescript-eslint/space-before-function-paren": "off",
-        "@typescript-eslint/quotes": "off"
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/explicit-function-return-type": "off", // Disabilita l'obbligo di specificare il tipo di ritorno delle funzioni
+        "@typescript-eslint/semi": "off",
+        "semi": "off" // Imposta la regola per evitare i punti e virgola extra
+
     }
 }

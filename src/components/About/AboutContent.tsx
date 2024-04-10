@@ -3,10 +3,10 @@
 import React from "react";
 import "./AboutContentStyle.css";
 
-export default function AboutContent(): JSX.Element {
+const AboutContent = (): JSX.Element => {
   return (
-    <div className="about-me">
-      <h1 className="title">Who am I?</h1>
+    <section className="about-me">
+      <h2 className="title">Who am I?</h2>
       <p>
         Hello everyone! I'm Stefania, a passionate 33-year-old woman who has
         turned the world of front-end development into her own creative
@@ -15,7 +15,6 @@ export default function AboutContent(): JSX.Element {
         example, I created this portfolio using React with TypeScript to hone
         these skills. I'm up for any challenge!
       </p>
-      <br />
       <p>
         With a keen eye for design, I've spent time shaping the visual aspect of
         Twitch and websites, bringing my passion for graphic design into every
@@ -30,7 +29,6 @@ export default function AboutContent(): JSX.Element {
         the ITS Steve Jobs Academy in Catania, an experience that adds a local
         touch to my professional growth, so I'm totally #opentowork!
       </p>
-      <br />
       <p>
         I am a determined, hardworking, proactive person, and a quick learner. I
         have intermediate proficiency in writing and speaking English and
@@ -40,6 +38,8 @@ export default function AboutContent(): JSX.Element {
         adventure, where code becomes art and user experience takes center
         stage!
       </p>
-    </div>
+    </section>
   );
-}
+};
+
+export default AboutContent;

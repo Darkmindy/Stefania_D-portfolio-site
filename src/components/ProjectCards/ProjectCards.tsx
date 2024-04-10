@@ -1,18 +1,89 @@
-import React from "react"
-import "./ProjectCardsStyle.css"
+/* eslint-disable @typescript-eslint/indent */
+/* eslint-disable @typescript-eslint/array-type */
+/* eslint-disable @typescript-eslint/comma-dangle */
+/* eslint-disable @typescript-eslint/member-delimiter-style */
+/* eslint-disable @typescript-eslint/strict-boolean-expressions */
+import React from "react";
+import PropTypes from "prop-types";
+import "./ProjectCardsStyle.css";
 
-export default function ProjectCards(props: { imgSrc: string, title: string, text: string, access: string, view: string }): JSX.Element {
+interface ProjectCardProps {
+  imgSrc: string;
+  title: string;
+  text: string;
+  access: string;
+  view: string;
+  tech: {
+    logo: string;
+    name: string;
+  }[];
+}
+
+export default function ProjectCards(props: ProjectCardProps) {
+  const { imgSrc, title, text, access, view, tech } = props;
+
   return (
     <div className="project-card">
-      <img src = {props.imgSrc} alt = "Project visualization"></img>
-      <h2 className="project-title">{props.title}</h2>
+      <img src={imgSrc} alt="Project visualization" />
+      <h2 className="project-title">{title}</h2>
       <div className="pro-details">
-        <p>{props.text}</p>
+        <p>{text}</p>
+        {tech && (
+          <div className="tech-stack">
+            {tech.map((technology, index) => (
+              <img
+                key={index}
+                src={technology.logo}
+                alt={technology.name}
+                className="tech-logo logo"
+              />
+            ))}
+          </div>
+        )}
         <div className="pro-btns">
-          { props.access !== '' ? <a href = {props.access} target = "_blank" rel="noreferrer" className = "btn">Access</a> : '' }
-          { props.view !== '' ? <a href = {props.view} target = "_blank" rel="noreferrer" className = "btn">View</a> : '' }
+          {access && (
+            <a
+              href={access}
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+              aria-label="Access"
+            >
+              Access
+            </a>
+          )}
+          {view && (
+            <a
+              href={view}
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+              aria-label="View"
+            >
+              View
+            </a>
+          )}
         </div>
       </div>
     </div>
-  )
+  );
 }
+
+ProjectCards.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  access: PropTypes.string,
+  view: PropTypes.string,
+  tech: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      logo: PropTypes.string.isRequired,
+    })
+  ),
+};
+
+ProjectCards.defaultProps = {
+  access: "",
+  view: "",
+};

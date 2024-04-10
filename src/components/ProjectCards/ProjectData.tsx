@@ -1,30 +1,51 @@
-import antidoryVis from '../../assets/Projects/antidory-vis.png'
-import timerVis from '../../assets/Projects/timer-vis.png'
-import portfolioVis from '../../assets/Projects/portfolio-vis.png'
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable @typescript-eslint/comma-dangle */
+/* eslint-disable @typescript-eslint/member-delimiter-style */
+import ReactLogo from "../../assets/Icons/react-icon.png";
+import TypeScriptLogo from "../../assets/Icons/typescript32.png";
+import JavaScriptLogo from "../../assets/Icons/javascriptt.png";
+import BootsrapLogo from "../../assets/Icons/bootstrap-logo.svg";
 
-const ProjectCardData: Array<{ imgSrc: any, title: string, text: string, view: string, access: string }> = [
+import MyPortfolio from "../../assets/Projects/MyPortfolio.png";
+import DuckList from "../../assets/Projects/DuckList.png";
+import Tictactoe from "../../assets/Projects/Tic-tac-toe.png";
+
+const ProjectCardData = [
   {
-    imgSrc: portfolioVis,
-    title: "Personal Portfolio",
-    text: "My personal portfolio made with React and TypeScript!",
-    view: "https://github.com/Sabrinadomin/myPortfolio",
-    access: ""
+    imgSrc: MyPortfolio,
+    title: "Personal Portfolio 👩🏻‍💻",
+    tech: [
+      { logo: ReactLogo, name: "React" },
+      { logo: TypeScriptLogo, name: "TypeScript" },
+    ],
+    text: "This personal portfolio website",
+    view: "https://github.com/Darkmindy/Stefania_D-portfolio-site.git",
+    access: "", // Placeholder for access URL
   },
   {
-    imgSrc: antidoryVis,
-    title: "Antidory Bot",
-    text: "A telegram bot made with Node.js and mongoDB!",
-    view: "https://github.com/Sabrinadomin/antidory",
-    // access: "https://t.me/AntidoryBot"
-    access: ""
+    imgSrc: DuckList,
+    title: "Ducky To-Do-List 🦆",
+    tech: [
+      { logo: ReactLogo, name: "React" },
+      { logo: TypeScriptLogo, name: "TypeScript" },
+      { logo: BootsrapLogo, name: "Bootstrap" },
+    ],
+    text: "A to-do list with modify and delete buttons",
+    view: "https://github.com/Darkmindy/Ducky-To-Do-List.git",
+    access: "", // Placeholder for access URL
   },
   {
-    imgSrc: timerVis,
-    title: "Timergator",
-    text: "A timer that runs on a Navigator. Created with JavaScript DOM.",
-    view: "https://github.com/Sabrinadomin/Timergator",
-    access: ""
-  }
-]
+    imgSrc: Tictactoe,
+    title: "Tic-Tac-Toe 🎮",
+    tech: [
+      { logo: ReactLogo, name: "React" },
+      { logo: JavaScriptLogo, name: "JavaScript" },
+    ],
+    text: "A simple Tic Tac Toe game, with sounds and emojis",
+    view: "https://github.com/Darkmindy/TicTacToe-game.git",
+    access: "", // Placeholder for access URL
+  },
+];
 
-export default ProjectCardData
+export default ProjectCardData;

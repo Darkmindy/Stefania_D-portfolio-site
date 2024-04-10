@@ -1,24 +1,20 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @typescript-eslint/semi */
 import React from "react";
 import "./FooterStyle.css";
 import { FaGithub, FaLinkedin, FaMailBulk, FaPhone } from "react-icons/fa";
 
-export default function Footer(): JSX.Element {
+const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-container">
-        <div className="left">
+        <div className="footer-left">
           <div className="phone">
             <h4>
-              <FaPhone
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
+              <FaPhone size={20} style={{ marginRight: "0.5rem" }} />
               <a
                 href="https://wa.me/+393247860089"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
               >
                 WhatsApp me!
               </a>
@@ -27,14 +23,12 @@ export default function Footer(): JSX.Element {
 
           <div className="email">
             <h4>
-              <FaMailBulk
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
+              <FaMailBulk size={20} style={{ marginRight: "0.5rem" }} />
               <a
                 href="mailto:stefania.deliso1@gmail.com"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="Email"
               >
                 Email me!
               </a>
@@ -42,32 +36,30 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
 
-        <div className="right">
+        <div className="footer-right">
           <div className="social">
             <a
               href="https://www.linkedin.com/in/stefaniad91/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <FaLinkedin
-                size={40}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
+              <FaLinkedin size={40} />
             </a>
 
             <a
               href="https://github.com/Darkmindy"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <FaGithub
-                size={40}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
+              <FaGithub size={40} />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
-}
+};
+
+export default Footer;

@@ -40,16 +40,12 @@
   text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.icon-small {
-  width: 70px;
-  height: 50px; 
-}
-
-.firma {
-  width: 200px;
-  height: 220px;
+.logo {
+  height: 4rem;  /* Imposta l'altezza uguale a quella del testo della navbar */
+  width: auto;  /* Mantiene le proporzioni dell'immagine */
   margin-left: 20px;
 }
+
 
 @media screen and (max-width: 1040px) {
   .nav-menu {
