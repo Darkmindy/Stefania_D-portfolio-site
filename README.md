@@ -21,7 +21,3 @@ This is the first version of my portfolio, more features will be added in future
 ## Feedback
 
 Feedback and suggestions are always welcome! Feel free to open an issue or reach out to me directly.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
