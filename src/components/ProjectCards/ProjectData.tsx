@@ -47,7 +47,7 @@ const ProjectCardData = [
     ],
     text: "A simple Tic Tac Toe game, with sounds and emojis",
     view: "https://github.com/Darkmindy/TicTacToe-game.git",
-    demo: "https://trissgame.netlify.app",
+    demo: "https://board-game-sd.netlify.app",
     access: "", // Placeholder for access URL
   },
 ];
