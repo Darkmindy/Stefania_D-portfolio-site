@@ -14,6 +14,7 @@ import netlify from "../../assets/Icons/netlify.png";
 import typescript from "../../assets/Icons/typescript.png";
 import reactIcon from "../../assets/Icons/react.png";
 import boots from "../../assets/Icons/bootstrap.png";
+import MUILogo from "../../assets/Icons/material-ui.svg";
 import html from "../../assets/Icons/html.png";
 import css from "../../assets/Icons/css.png";
 import aws from "../../assets/Icons/aws.png";
@@ -43,6 +44,7 @@ export default function HardSkill(): JSX.Element {
         <img className="grid-img" src={css} />
         <img className="grid-img" src={reactIcon} />
         <img className="grid-img" src={boots} />
+        <img className="grid-img" src={MUILogo} />
       </div>
 
       <h3 className="level">Back-end (beginner)</h3>

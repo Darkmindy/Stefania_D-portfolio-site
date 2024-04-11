@@ -13,6 +13,7 @@ interface ProjectCardProps {
   text: string;
   access: string;
   view: string;
+  demo?: string; // Aggiunta della prop demo
   tech: {
     logo: string;
     name: string;
@@ -20,7 +21,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCards(props: ProjectCardProps) {
-  const { imgSrc, title, text, access, view, tech } = props;
+  const { imgSrc, title, text, access, view, demo, tech } = props; // Aggiunta della prop demo
 
   return (
     <div className="project-card">
@@ -63,6 +64,17 @@ export default function ProjectCards(props: ProjectCardProps) {
               View
             </a>
           )}
+          {demo && ( // Blocco condizionale per il pulsante di prova dell'app
+            <a
+              href={demo}
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+              aria-label="Demo"
+            >
+              Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -75,6 +87,7 @@ ProjectCards.propTypes = {
   text: PropTypes.string.isRequired,
   access: PropTypes.string,
   view: PropTypes.string,
+  demo: PropTypes.string, // Aggiunta della prop demo
   tech: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

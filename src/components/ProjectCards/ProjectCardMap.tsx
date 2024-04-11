@@ -10,6 +10,7 @@ interface ProjectData {
   title: string;
   text: string;
   view: string;
+  demo?: string;
   access: string;
   tech: {
     logo: string;
@@ -31,6 +32,7 @@ export default function Card(): JSX.Element {
               text={val.text}
               tech={val.tech}
               view={val.view}
+              demo={val.demo}
               access={val.access}
             />
           );

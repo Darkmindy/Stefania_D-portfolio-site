@@ -6,6 +6,7 @@ import ReactLogo from "../../assets/Icons/react-icon.png";
 import TypeScriptLogo from "../../assets/Icons/typescript32.png";
 import JavaScriptLogo from "../../assets/Icons/javascriptt.png";
 import BootsrapLogo from "../../assets/Icons/bootstrap-logo.svg";
+import MUILogo from "../../assets/Icons/material-ui.svg";
 
 import MyPortfolio from "../../assets/Projects/MyPortfolio.png";
 import DuckList from "../../assets/Projects/DuckList.png";
@@ -18,6 +19,7 @@ const ProjectCardData = [
     tech: [
       { logo: ReactLogo, name: "React" },
       { logo: TypeScriptLogo, name: "TypeScript" },
+      { logo: MUILogo, name: "MaterialUI" },
     ],
     text: "This personal portfolio website",
     view: "https://github.com/Darkmindy/Stefania_D-portfolio-site.git",
@@ -33,6 +35,7 @@ const ProjectCardData = [
     ],
     text: "A to-do list with modify and delete buttons",
     view: "https://github.com/Darkmindy/Ducky-To-Do-List.git",
+    demo: "https://duckylist.netlify.app",
     access: "", // Placeholder for access URL
   },
   {
@@ -44,6 +47,7 @@ const ProjectCardData = [
     ],
     text: "A simple Tic Tac Toe game, with sounds and emojis",
     view: "https://github.com/Darkmindy/TicTacToe-game.git",
+    demo: "https://trissgame.netlify.app",
     access: "", // Placeholder for access URL
   },
 ];
