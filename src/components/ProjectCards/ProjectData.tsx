@@ -11,6 +11,7 @@ import MUILogo from "../../assets/Icons/material-ui.svg";
 import MyPortfolio from "../../assets/Projects/MyPortfolio.png";
 import DuckList from "../../assets/Projects/DuckList.png";
 import Tictactoe from "../../assets/Projects/Tic-tac-toe.png";
+import ProjectWork from "../../assets/Projects/Project-Work.png";
 
 const ProjectCardData = [
   {
@@ -21,8 +22,21 @@ const ProjectCardData = [
       { logo: TypeScriptLogo, name: "TypeScript" },
       { logo: MUILogo, name: "MaterialUI" },
     ],
-    text: "This personal portfolio website",
+    text: "The Personal Portfolio showcases current and future projects, highlighting acquired skills. It also includes a contact form and a resume.",
     view: "https://github.com/Darkmindy/Stefania_D-portfolio-site.git",
+    access: "", // Placeholder for access URL
+  },
+  {
+    imgSrc: ProjectWork,
+    title: "Project Work",
+    tech: [
+      { logo: ReactLogo, name: "React" },
+      { logo: TypeScriptLogo, name: "TypeScript" },
+      { logo: BootsrapLogo, name: "Bootstrap" },
+    ],
+    text: "It is an e-commerce platform that allows users to browse, shop, and purchase products.",
+    view: "https://github.com/Darkmindy/Project-work-CODE",
+    demo: "COMING SOON",
     access: "", // Placeholder for access URL
   },
   {
@@ -33,7 +47,7 @@ const ProjectCardData = [
       { logo: TypeScriptLogo, name: "TypeScript" },
       { logo: BootsrapLogo, name: "Bootstrap" },
     ],
-    text: "A to-do list with modify and delete buttons",
+    text: "This project focuses on a React.js and hooks exercise. The app also allows users to add, edit, and delete tasks.",
     view: "https://github.com/Darkmindy/Ducky-To-Do-List.git",
     demo: "https://duckylist.netlify.app",
     access: "", // Placeholder for access URL
@@ -45,7 +59,7 @@ const ProjectCardData = [
       { logo: ReactLogo, name: "React" },
       { logo: JavaScriptLogo, name: "JavaScript" },
     ],
-    text: "A simple Tic Tac Toe game, with sounds and emojis",
+    text: "This project involves creating a simple Tic-Tac-Toe game enriched with sounds and emojis.",
     view: "https://github.com/Darkmindy/TicTacToe-game.git",
     demo: "https://board-game-sd.netlify.app",
     access: "", // Placeholder for access URL

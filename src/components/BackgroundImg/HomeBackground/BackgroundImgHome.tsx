@@ -26,11 +26,14 @@ const BackgroundImgHome = (): JSX.Element => {
         </div>
         <div>
           <Link to="/projects" className="btn">
-            Projects
+            See my projects
           </Link>
-          <Link to="/about" className="btn btn-light">
-            About
-          </Link>
+          <a
+            href="https://drive.google.com/file/d/1cxDTR6DlQrU64nTDkGBIhwZXtNjoBLRQ/view?usp=sharing"
+            className="btn btn-light"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>
