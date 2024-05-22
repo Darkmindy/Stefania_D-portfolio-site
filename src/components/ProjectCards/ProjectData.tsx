@@ -7,11 +7,13 @@ import TypeScriptLogo from "../../assets/Icons/typescript32.png";
 import JavaScriptLogo from "../../assets/Icons/javascriptt.png";
 import BootsrapLogo from "../../assets/Icons/bootstrap-logo.svg";
 import MUILogo from "../../assets/Icons/material-ui.svg";
+import ViteLogo from "../../assets/Icons/vite.png";
 
 import MyPortfolio from "../../assets/Projects/MyPortfolio.png";
 import DuckList from "../../assets/Projects/DuckList.png";
 import Tictactoe from "../../assets/Projects/Tic-tac-toe.png";
 import ProjectWork from "../../assets/Projects/Project-Work.png";
+import ComingSoon from "../../assets/Projects/comingsoon.png";
 
 const ProjectCardData = [
   {
@@ -24,6 +26,18 @@ const ProjectCardData = [
     ],
     text: "The Personal Portfolio showcases current and future projects, highlighting acquired skills. It also includes a contact form and a resume.",
     view: "https://github.com/Darkmindy/Stefania_D-portfolio-site.git",
+    access: "", // Placeholder for access URL
+  },
+  {
+    imgSrc: ComingSoon,
+    title: "New Project - Work in Progress - 🚧",
+    tech: [
+      { logo: ReactLogo, name: "React" },
+      { logo: TypeScriptLogo, name: "TypeScript" },
+      { logo: ViteLogo, name: "Vite" },
+    ],
+    text: "This project is in progress.",
+    view: "",
     access: "", // Placeholder for access URL
   },
   {

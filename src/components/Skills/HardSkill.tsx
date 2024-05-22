@@ -25,6 +25,8 @@ import figma from "../../assets/Icons/figma.png";
 import indesign from "../../assets/Icons/indesign.png";
 import canva from "../../assets/Icons/canva.png";
 import vscode from "../../assets/Icons/vscode.png";
+import ViteLogo from "../../assets/Icons/vite.png";
+
 import "./HardSkillStyle.css";
 
 export default function HardSkill(): JSX.Element {
@@ -45,6 +47,7 @@ export default function HardSkill(): JSX.Element {
         <img className="grid-img" src={reactIcon} />
         <img className="grid-img" src={boots} />
         <img className="grid-img" src={MUILogo} />
+        <img className="grid-img" src={ViteLogo} />
       </div>
 
       <h3 className="level">Back-end (beginner)</h3>
