@@ -8,12 +8,16 @@ import JavaScriptLogo from "../../assets/Icons/javascriptt.png";
 import BootsrapLogo from "../../assets/Icons/bootstrap-logo.svg";
 import MUILogo from "../../assets/Icons/material-ui.svg";
 import ViteLogo from "../../assets/Icons/vite.png";
+import HTML from "../../assets/Icons/html.png";
+import CSS from "../../assets/Icons/css.png";
+import JavaScript from "../../assets/Icons/javascript.png";
 
 import MyPortfolio from "../../assets/Projects/MyPortfolio.png";
 import DuckList from "../../assets/Projects/DuckList.png";
 import Tictactoe from "../../assets/Projects/Tic-tac-toe.png";
 import ProjectWork from "../../assets/Projects/Project-Work.png";
 import ComingSoon from "../../assets/Projects/comingsoon.png";
+import MyBusinessCard from "../../assets/Projects/MyBusinessCard.png";
 
 const ProjectCardData = [
   {
@@ -39,6 +43,19 @@ const ProjectCardData = [
     text: "This project is in progress.",
     view: "",
     access: "", // Placeholder for access URL
+  },
+  {
+    imgSrc: MyBusinessCard,
+    title: "Portable Business Card 👩🏻‍💻",
+    tech: [
+      { logo: HTML, name: "HTML" },
+      { logo: CSS, name: "CSS" },
+      { logo: JavaScript, name: "JavaScript" },
+    ],
+    text: "This business card is portable, as it's responsive on every screen device and showcases who I am. It includes a contact form and my resume.",
+    view: "https://github.com/Darkmindy/SD-business-card",
+    access: "", // Placeholder for access URL
+    demo: "https://darkmindy.github.io/SD-business-card/",
   },
   {
     imgSrc: ProjectWork,
