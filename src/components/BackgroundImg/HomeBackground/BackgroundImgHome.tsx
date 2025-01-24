@@ -5,7 +5,7 @@ import "./HomeBackgroundImgStyle.css";
 // import mainImg from "../../../assets/Background/home-background.jpg";
 
 const resume =
-  "Welcome to my portfolio! I’m a front-end developer who loves crafting visually delightful and easy-to-use interfaces. Take a look at my projects and skills, and feel free to contact me if you have any questions or would like to work together!";
+  "Hello! I’m a front-end developer from Catania, passionate about crafting visually delightful and user-friendly interfaces. Check out my projects and skills, and feel free to reach out if you have any questions or want to collaborate!";
 
 const BackgroundImgHome = (): JSX.Element => {
   return (
@@ -26,7 +26,7 @@ const BackgroundImgHome = (): JSX.Element => {
         </div>
         <div>
           <Link to="/projects" className="btn">
-            See my projects
+            Projects
           </Link>
           <a
             href="https://drive.google.com/file/d/1cxDTR6DlQrU64nTDkGBIhwZXtNjoBLRQ/view?usp=sharing"

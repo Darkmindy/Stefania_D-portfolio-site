@@ -2,6 +2,7 @@ import React from 'react'
 import AboutContent from '../components/About/AboutContent'
 import BackgroundImg from '../components/BackgroundImg/Background/Background'
 import HardSkill from '../components/Skills/HardSkill'
+import SoftSkill from '../components/Skills/SoftSkill'
 
 export default function About(): JSX.Element {
   return (
@@ -9,6 +10,7 @@ export default function About(): JSX.Element {
       <BackgroundImg heading = 'ABOUT ME_' text = 'Some stuff about me' page = 'about'/>
       <AboutContent/>
       <HardSkill/>
+      <SoftSkill/>
     </>
   )
 }

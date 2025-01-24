@@ -1,37 +1,31 @@
+/* HardSkillStyle.css */
 .img-grid {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-left: 6rem;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.level {
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 1rem;
-  color: #fff;
-  margin-left: 7rem;
+.grid-item {
+  flex: 1 1 200px; /* Adatta la dimensione minima degli elementi */
+  margin: 1rem; /* Ridotto il margine tra gli elementi */
+  text-align: center; /* Centro il testo per ogni grid item */
 }
 
 .grid-img {
   max-width: 90px;
-  height: 10%;
+  height: auto;
   display: block;
-  flex-basis: 100%;
-  margin: 1rem;
-  margin-left: 2rem;
-}
-
-@media only screen and (min-width:640px) {
-  .grid-img {
-    flex-basis: 50%;
-  }
-
+  margin: 0.5rem; /* Ridotto il margine tra le icone */
 }
 
 @media screen and (max-width: 640px) {
-  .level {
-    margin-left: 3rem;
+  .img-grid {
+    margin-left: 0; /* Rimuovo il margine sinistro per dispositivi più piccoli */
+  }
+  
+  .grid-item {
+    flex: 1 1 100%; /* Prendi tutto lo spazio disponibile su dispositivi più piccoli */
   }
 }
